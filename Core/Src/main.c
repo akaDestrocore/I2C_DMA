@@ -72,6 +72,7 @@ void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 {
     // Set addr, size and buffer for DMA transfers
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)pData);
+    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)&I2C1->TXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_6, size);
 
     // Enable DMA req for I2C1
@@ -94,6 +95,7 @@ void I2C1_Master_Receive_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 {
     // Set addr, size and buffer for DMA reception
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)pData);
+    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)&I2C1->RXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_7, size);
 
     // Enable DMA reqs for I2C1
@@ -126,6 +128,7 @@ void I2C2_Slave_Receive_DMA_Setup(uint8_t *pData, uint16_t size)
 {
     // Set addr, size and buffer for DMA reception
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_5, (uint32_t)pData);
+    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_5, (uint32_t)&I2C2->RXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_5, size);
 
     // Reset TC bit
@@ -140,6 +143,7 @@ void I2C2_Slave_Receive_DMA_Setup(uint8_t *pData, uint16_t size)
     // Enable DMA Channel
     LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
 
+
     slave_rx_complete = 0;
 }
 
@@ -147,6 +151,7 @@ void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
 {
     // Set addr, size and buffer for DMA transfers
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_4, (uint32_t)pData);
+    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_4, (uint32_t)&I2C2->TXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_4, size);
 
     // Reset TC bit
@@ -178,10 +183,10 @@ void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
    }
    /* USER CODE END DMA1_Channel4_IRQn 0 */
    /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */
- 
+
    /* USER CODE END DMA1_Channel4_IRQn 1 */
  }
- 
+
  /**
    * @brief This function handles DMA1 channel5 global interrupt.
    */
@@ -196,10 +201,10 @@ void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
    }
    /* USER CODE END DMA1_Channel5_IRQn 0 */
    /* USER CODE BEGIN DMA1_Channel5_IRQn 1 */
- 
+
    /* USER CODE END DMA1_Channel5_IRQn 1 */
  }
- 
+
  /**
    * @brief This function handles DMA1 channel6 global interrupt.
    */
@@ -214,10 +219,10 @@ void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
    }
    /* USER CODE END DMA1_Channel6_IRQn 0 */
    /* USER CODE BEGIN DMA1_Channel6_IRQn 1 */
- 
+
    /* USER CODE END DMA1_Channel6_IRQn 1 */
  }
- 
+
  /**
    * @brief This function handles DMA1 channel7 global interrupt.
    */
@@ -232,7 +237,7 @@ void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
    }
    /* USER CODE END DMA1_Channel7_IRQn 0 */
    /* USER CODE BEGIN DMA1_Channel7_IRQn 1 */
- 
+
    /* USER CODE END DMA1_Channel7_IRQn 1 */
  }
 
@@ -257,7 +262,7 @@ void I2C1_EV_IRQHandler(void)
    if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
 
      LL_I2C_ClearFlag_ADDR(I2C2);
-     
+
      if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
 
        LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
@@ -266,17 +271,17 @@ void I2C1_EV_IRQHandler(void)
        LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);
      }
    }
-   
+
    if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
 
      LL_I2C_ClearFlag_STOP(I2C2);
-     
+
      if (1 == slave_rx_complete) {
 
        I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
      }
      if (1 == slave_tx_complete) {
-      
+
        I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
      }
    }
@@ -382,13 +387,13 @@ int main(void)
       master_rx_complete = 0;
 
       LL_mDelay(1000);
-      
+
       I2C1_Master_Transmit_DMA(SLAVE_ADDRESS, master_tx_buffer, strlen((char*)master_tx_buffer));
-      
+
       LL_GPIO_TogglePin(RED_GPIO_Port, RED_Pin);
-      
+
       LL_mDelay(100);
-      
+
       I2C1_Master_Receive_DMA(SLAVE_ADDRESS, master_rx_buffer, strlen((char*)slave_tx_buffer));
     }
     /* USER CODE END WHILE */
