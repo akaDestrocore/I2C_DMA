@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +42,18 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+uint8_t master_tx_buffer[32] = "Hello from I2C1 Master!";
+uint8_t master_rx_buffer[32];
+uint8_t slave_tx_buffer[32] = "Response from I2C2 Slave!";
+uint8_t slave_rx_buffer[32];
 
+volatile uint8_t master_tx_complete = 0;
+volatile uint8_t master_rx_complete = 0;
+volatile uint8_t slave_tx_complete = 0;
+volatile uint8_t slave_rx_complete = 0;
+
+// I2C slave addr
+#define SLAVE_ADDRESS 0x28
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -57,7 +68,240 @@ static void MX_I2C2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
+{
+    // Set addr, size and buffer for DMA transfers
+    LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)pData);
+    LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_6, size);
 
+    // Enable DMA req for I2C1
+    LL_I2C_EnableDMAReq_TX(I2C1);
+
+    // Enable DMA channel
+    LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_6);
+
+    // Send start sequence and slave addr
+    LL_I2C_HandleTransfer(I2C1, slaveAddr, LL_I2C_ADDRSLAVE_7BIT, size,
+                          LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+
+    master_tx_complete = 0;
+}
+
+void I2C1_Master_Receive_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
+{
+    // Set addr, size and buffer for DMA reception
+    LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)pData);
+    LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_7, size);
+
+    // Enable DMA reqs for I2C1
+    LL_I2C_EnableDMAReq_RX(I2C1);
+
+    // Enable DMA Channel
+    LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_7);
+
+    // Send start sequence and slave addr in reading mode
+    LL_I2C_HandleTransfer(I2C1, slaveAddr, LL_I2C_ADDRSLAVE_7BIT, size,
+                          LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_READ);
+
+    master_rx_complete = 0;
+}
+
+void I2C2_Slave_Init(void)
+{
+    // Enable interrupt for address matchig event
+    LL_I2C_EnableIT_ADDR(I2C2);
+
+    // clear slave addresses
+    slave_tx_complete = 0;
+    slave_rx_complete = 0;
+}
+
+void I2C2_Slave_Receive_DMA_Setup(uint8_t *pData, uint16_t size)
+{
+    // Set addr, size and buffer for DMA reception
+    LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_5, (uint32_t)pData);
+    LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_5, size);
+
+    // Reset TC bit
+    LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_5);
+
+    // Enable DMA req for I2C2
+    LL_I2C_EnableDMAReq_RX(I2C2);
+
+    // Enable DMA Channel
+    LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
+
+    slave_rx_complete = 0;
+}
+
+void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
+{
+    // Set addr, size and buffer for DMA transfers
+    LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_4, (uint32_t)pData);
+    LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_4, size);
+
+    // Reset TC bit
+    LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_4);
+
+    // Enable DMA req for I2C2
+    LL_I2C_EnableDMAReq_TX(I2C2);
+
+    // Enable DMA Channel
+    LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);
+
+    slave_tx_complete = 0;
+}
+
+/**
+  * @brief This function handles DMA1 channel4 global interrupt.
+  */
+ void DMA1_Channel4_IRQHandler(void)
+ {
+   /* USER CODE BEGIN DMA1_Channel4_IRQn 0 */
+   // I2C2 TX
+   if (LL_DMA_IsActiveFlag_TC4(DMA1)) {
+     LL_DMA_ClearFlag_TC4(DMA1);
+     LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_4);
+     slave_tx_complete = 1;
+   }
+   /* USER CODE END DMA1_Channel4_IRQn 0 */
+   /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */
+ 
+   /* USER CODE END DMA1_Channel4_IRQn 1 */
+ }
+ 
+ /**
+   * @brief This function handles DMA1 channel5 global interrupt.
+   */
+ void DMA1_Channel5_IRQHandler(void)
+ {
+   /* USER CODE BEGIN DMA1_Channel5_IRQn 0 */
+   // I2C2 RX
+   if (LL_DMA_IsActiveFlag_TC5(DMA1)) {
+     LL_DMA_ClearFlag_TC5(DMA1);
+     LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_5);
+     slave_rx_complete = 1;
+   }
+   /* USER CODE END DMA1_Channel5_IRQn 0 */
+   /* USER CODE BEGIN DMA1_Channel5_IRQn 1 */
+ 
+   /* USER CODE END DMA1_Channel5_IRQn 1 */
+ }
+ 
+ /**
+   * @brief This function handles DMA1 channel6 global interrupt.
+   */
+ void DMA1_Channel6_IRQHandler(void)
+ {
+   /* USER CODE BEGIN DMA1_Channel6_IRQn 0 */
+   // I2C1 TX
+   if (LL_DMA_IsActiveFlag_TC6(DMA1)) {
+     LL_DMA_ClearFlag_TC6(DMA1);
+     LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_6);
+     master_tx_complete = 1;
+   }
+   /* USER CODE END DMA1_Channel6_IRQn 0 */
+   /* USER CODE BEGIN DMA1_Channel6_IRQn 1 */
+ 
+   /* USER CODE END DMA1_Channel6_IRQn 1 */
+ }
+ 
+ /**
+   * @brief This function handles DMA1 channel7 global interrupt.
+   */
+ void DMA1_Channel7_IRQHandler(void)
+ {
+   /* USER CODE BEGIN DMA1_Channel7_IRQn 0 */
+   // I2C1 RX
+   if (LL_DMA_IsActiveFlag_TC7(DMA1)) {
+     LL_DMA_ClearFlag_TC7(DMA1);
+     LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_7);
+     master_rx_complete = 1;
+   }
+   /* USER CODE END DMA1_Channel7_IRQn 0 */
+   /* USER CODE BEGIN DMA1_Channel7_IRQn 1 */
+ 
+   /* USER CODE END DMA1_Channel7_IRQn 1 */
+ }
+
+ /**
+  * @brief This function handles I2C1 event interrupt.
+  */
+void I2C1_EV_IRQHandler(void)
+{
+  /* USER CODE BEGIN I2C1_EV_IRQn 0 */
+
+  /* USER CODE END I2C1_EV_IRQn 0 */
+  /* USER CODE BEGIN I2C1_EV_IRQn 1 */
+
+  /* USER CODE END I2C1_EV_IRQn 1 */
+}
+
+/**
+  * @brief This function handles I2C2 event interrupt.
+  */
+void I2C2_EV_IRQHandler(void)
+{
+  /* USER CODE BEGIN I2C2_EV_IRQn 0 */
+  // Check if addr matches
+  if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
+    // clear flag
+    LL_I2C_ClearFlag_ADDR(I2C2);
+    
+    // r or w?
+    if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
+      // Master sends -  slave receives
+    } else {
+      // Master awaits for data - slave sends
+    }
+  }
+  
+  // check stop event
+  if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
+    // clear flag
+    LL_I2C_ClearFlag_STOP(I2C2);
+    
+    // Prepare for next data exchange
+    if (1 == slave_rx_complete) {
+      // If data received prepare for next data reception
+      I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
+    }
+    if (1 == slave_tx_complete) {
+      // If data send prepare for next transmission
+      I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
+    }
+  }
+  /* USER CODE END I2C2_EV_IRQn 0 */
+  /* USER CODE BEGIN I2C2_EV_IRQn 1 */
+
+  /* USER CODE END I2C2_EV_IRQn 1 */
+}
+
+/**
+  * @brief This function handles I2C1 error interrupt.
+  */
+void I2C1_ER_IRQHandler(void)
+{
+  /* USER CODE BEGIN I2C1_ER_IRQn 0 */
+
+  /* USER CODE END I2C1_ER_IRQn 0 */
+  /* USER CODE BEGIN I2C1_ER_IRQn 1 */
+
+  /* USER CODE END I2C1_ER_IRQn 1 */
+}
+
+/**
+  * @brief This function handles I2C2 error interrupt.
+  */
+void I2C2_ER_IRQHandler(void)
+{
+  /* USER CODE BEGIN I2C2_ER_IRQn 0 */
+
+  /* USER CODE END I2C2_ER_IRQn 0 */
+  /* USER CODE BEGIN I2C2_ER_IRQn 1 */
+
+  /* USER CODE END I2C2_ER_IRQn 1 */
+}
 /* USER CODE END 0 */
 
 /**
@@ -93,13 +337,55 @@ int main(void)
   MX_I2C1_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
+  I2C2_Slave_Init();
 
+  // Prepare slave
+  I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
+
+  // Prepare slave to send data
+  I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
+
+  // wait ?
+  LL_mDelay(100);
+
+  // Send from master to slave
+  I2C1_Master_Transmit_DMA(SLAVE_ADDRESS, master_tx_buffer, strlen((char*)master_tx_buffer));
+
+  while (1 != master_tx_complete){
+    // wait TC
+  }
+
+  LL_mDelay(100);
+
+  // Master accept data from slave
+  I2C1_Master_Receive_DMA(SLAVE_ADDRESS, master_rx_buffer, strlen((char*)slave_tx_buffer));
+
+  while (1 != master_rx_complete){
+    // wait TC
+  }
+
+  LL_GPIO_TogglePin(RED_GPIO_Port, RED_Pin);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    // send data periodically
+    if (1 == master_tx_complete && 1 == master_rx_complete) {
+      master_tx_complete = 0;
+      master_rx_complete = 0;
+
+      LL_mDelay(1000);
+      
+      I2C1_Master_Transmit_DMA(SLAVE_ADDRESS, master_tx_buffer, strlen((char*)master_tx_buffer));
+      
+      LL_GPIO_TogglePin(RED_GPIO_Port, RED_Pin);
+      
+      LL_mDelay(100);
+      
+      I2C1_Master_Receive_DMA(SLAVE_ADDRESS, master_rx_buffer, strlen((char*)slave_tx_buffer));
+    }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
