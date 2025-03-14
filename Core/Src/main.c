@@ -77,6 +77,9 @@ void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
     // Enable DMA req for I2C1
     LL_I2C_EnableDMAReq_TX(I2C1);
 
+    // Enable IRQ
+    LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_6);
+
     // Enable DMA channel
     LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_6);
 
@@ -95,6 +98,9 @@ void I2C1_Master_Receive_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 
     // Enable DMA reqs for I2C1
     LL_I2C_EnableDMAReq_RX(I2C1);
+
+    // Enable IRQ
+    LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_7);
 
     // Enable DMA Channel
     LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_7);
@@ -128,6 +134,9 @@ void I2C2_Slave_Receive_DMA_Setup(uint8_t *pData, uint16_t size)
     // Enable DMA req for I2C2
     LL_I2C_EnableDMAReq_RX(I2C2);
 
+    // Enable IRQ
+    LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_5);
+
     // Enable DMA Channel
     LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
 
@@ -145,6 +154,9 @@ void I2C2_Slave_Transmit_DMA_Setup(uint8_t *pData, uint16_t size)
 
     // Enable DMA req for I2C2
     LL_I2C_EnableDMAReq_TX(I2C2);
+
+    // Enable IRQ
+    LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_4);
 
     // Enable DMA Channel
     LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);
@@ -250,7 +262,7 @@ void I2C2_EV_IRQHandler(void)
     
     // r or w?
     if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
-      // Master sends -  slave receives
+      // Master sends - slave receives
     } else {
       // Master awaits for data - slave sends
     }
