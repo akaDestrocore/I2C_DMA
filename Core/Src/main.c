@@ -53,7 +53,7 @@ volatile uint8_t slave_tx_complete = 0;
 volatile uint8_t slave_rx_complete = 0;
 
 // I2C slave addr
-#define SLAVE_ADDRESS 0x28
+#define SLAVE_ADDRESS 0x50
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -252,42 +252,35 @@ void I2C1_EV_IRQHandler(void)
 /**
   * @brief This function handles I2C2 event interrupt.
   */
-void I2C2_EV_IRQHandler(void)
-{
-  /* USER CODE BEGIN I2C2_EV_IRQn 0 */
-  // Check if addr matches
-  if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
-    // clear flag
-    LL_I2C_ClearFlag_ADDR(I2C2);
-    
-    // r or w?
-    if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
-      // Master sends - slave receives
-    } else {
-      // Master awaits for data - slave sends
-    }
-  }
-  
-  // check stop event
-  if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
-    // clear flag
-    LL_I2C_ClearFlag_STOP(I2C2);
-    
-    // Prepare for next data exchange
-    if (1 == slave_rx_complete) {
-      // If data received prepare for next data reception
-      I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
-    }
-    if (1 == slave_tx_complete) {
-      // If data send prepare for next transmission
-      I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
-    }
-  }
-  /* USER CODE END I2C2_EV_IRQn 0 */
-  /* USER CODE BEGIN I2C2_EV_IRQn 1 */
+ void I2C2_EV_IRQHandler(void)
+ {
+   if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
 
-  /* USER CODE END I2C2_EV_IRQn 1 */
-}
+     LL_I2C_ClearFlag_ADDR(I2C2);
+     
+     if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
+
+       LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
+     } else {
+
+       LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);
+     }
+   }
+   
+   if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
+
+     LL_I2C_ClearFlag_STOP(I2C2);
+     
+     if (1 == slave_rx_complete) {
+
+       I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
+     }
+     if (1 == slave_tx_complete) {
+      
+       I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
+     }
+   }
+ }
 
 /**
   * @brief This function handles I2C1 error interrupt.
