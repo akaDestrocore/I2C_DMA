@@ -1,0 +1,2 @@
+/home/lapsw1-2024/destrocore/VSCode/Projects/SPI2_ADC/CMakeFiles/edit_cache.dir
+/home/lapsw1-2024/destrocore/VSCode/Projects/SPI2_ADC/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build/CMakeFiles/STM32L4_I2C_DMA_debug.dir
+/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build/CMakeFiles/edit_cache.dir
+/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build/CMakeFiles/rebuild_cache.dir
