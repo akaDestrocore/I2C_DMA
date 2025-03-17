@@ -2659,7 +2659,7 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
                 0x08000000                g_pfnVectors
                 0x080001ac                        . = ALIGN (0x4)
 
-.text           0x080001ac     0x2040
+.text           0x080001ac     0x203c
                 0x080001ac                        . = ALIGN (0x4)
  *(.text)
  .text          0x080001ac       0x10 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
@@ -2819,197 +2819,197 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
  .text.MX_I2C1_Init
                 0x08000720      0x218 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
  .text.MX_I2C2_Init
-                0x08000938      0x1fc CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
+                0x08000938      0x1f8 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
  .text.SystemClock_Config
-                0x08000b34       0x7a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
-                0x08000b34                SystemClock_Config
- *fill*         0x08000bae        0x2 
- .text.main     0x08000bb0      0x104 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
-                0x08000bb0                main
+                0x08000b30       0x7a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
+                0x08000b30                SystemClock_Config
+ *fill*         0x08000baa        0x2 
+ .text.main     0x08000bac      0x104 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
+                0x08000bac                main
  .text.HAL_MspInit
-                0x08000cb4       0x30 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_hal_msp.c.obj
-                0x08000cb4                HAL_MspInit
+                0x08000cb0       0x30 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x08000cb0                HAL_MspInit
  .text.NMI_Handler
-                0x08000ce4        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000ce4                NMI_Handler
+                0x08000ce0        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000ce0                NMI_Handler
  .text.HardFault_Handler
-                0x08000ce6        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000ce6                HardFault_Handler
+                0x08000ce2        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000ce2                HardFault_Handler
  .text.MemManage_Handler
-                0x08000ce8        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000ce8                MemManage_Handler
+                0x08000ce4        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000ce4                MemManage_Handler
  .text.BusFault_Handler
-                0x08000cea        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000cea                BusFault_Handler
+                0x08000ce6        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000ce6                BusFault_Handler
  .text.UsageFault_Handler
-                0x08000cec        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000cec                UsageFault_Handler
+                0x08000ce8        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000ce8                UsageFault_Handler
  .text.SVC_Handler
-                0x08000cee        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000cee                SVC_Handler
+                0x08000cea        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000cea                SVC_Handler
  .text.DebugMon_Handler
-                0x08000cf0        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000cf0                DebugMon_Handler
+                0x08000cec        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000cec                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000cf2        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000cf2                PendSV_Handler
+                0x08000cee        0x2 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000cee                PendSV_Handler
  .text.SysTick_Handler
-                0x08000cf4        0x8 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08000cf4                SysTick_Handler
+                0x08000cf0        0x8 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08000cf0                SysTick_Handler
  .text.SystemInit
-                0x08000cfc       0x14 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
-                0x08000cfc                SystemInit
+                0x08000cf8       0x14 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
+                0x08000cf8                SystemInit
  .text.HAL_InitTick
-                0x08000d10       0x50 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08000d10                HAL_InitTick
+                0x08000d0c       0x50 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08000d0c                HAL_InitTick
  .text.HAL_Init
-                0x08000d60       0x1e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08000d60                HAL_Init
- *fill*         0x08000d7e        0x2 
+                0x08000d5c       0x1e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08000d5c                HAL_Init
+ *fill*         0x08000d7a        0x2 
  .text.HAL_IncTick
-                0x08000d80       0x18 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08000d80                HAL_IncTick
+                0x08000d7c       0x18 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08000d7c                HAL_IncTick
  .text.HAL_GetTick
-                0x08000d98        0xc CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08000d98                HAL_GetTick
+                0x08000d94        0xc CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08000d94                HAL_GetTick
  .text.__NVIC_SetPriority
-                0x08000da4       0x28 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08000da0       0x28 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08000dcc       0x3e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- *fill*         0x08000e0a        0x2 
+                0x08000dc8       0x3e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ *fill*         0x08000e06        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08000e0c       0x24 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08000e0c                HAL_NVIC_SetPriorityGrouping
+                0x08000e08       0x24 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08000e08                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08000e30       0x20 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08000e30                HAL_NVIC_SetPriority
+                0x08000e2c       0x20 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08000e2c                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x08000e50       0x28 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08000e50                HAL_SYSTICK_Config
+                0x08000e4c       0x28 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08000e4c                HAL_SYSTICK_Config
  .text.HAL_PWREx_GetVoltageRange
-                0x08000e78       0x10 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x08000e78                HAL_PWREx_GetVoltageRange
+                0x08000e74       0x10 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x08000e74                HAL_PWREx_GetVoltageRange
  .text.HAL_PWREx_ControlVoltageScaling
-                0x08000e88       0x90 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x08000e88                HAL_PWREx_ControlVoltageScaling
+                0x08000e84       0x90 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x08000e84                HAL_PWREx_ControlVoltageScaling
  .text.RCC_SetFlashLatencyFromMSIRange
-                0x08000f18       0x90 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08000f14       0x90 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .text.HAL_RCC_GetSysClockFreq
-                0x08000fa8       0xb4 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x08000fa8                HAL_RCC_GetSysClockFreq
+                0x08000fa4       0xb4 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08000fa4                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_OscConfig
-                0x0800105c      0x67c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x0800105c                HAL_RCC_OscConfig
+                0x08001058      0x67c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08001058                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x080016d8      0x188 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x080016d8                HAL_RCC_ClockConfig
+                0x080016d4      0x188 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080016d4                HAL_RCC_ClockConfig
  .text.RCCEx_PLLSAI1_Config
-                0x08001860      0x170 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x0800185c      0x170 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .text.RCCEx_PLLSAI2_Config
-                0x080019d0      0x148 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x080019cc      0x148 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x08001b18      0x470 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
-                0x08001b18                HAL_RCCEx_PeriphCLKConfig
+                0x08001b14      0x470 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x08001b14                HAL_RCCEx_PeriphCLKConfig
  .text.LL_GPIO_SetPinMode
-                0x08001f88       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+                0x08001f84       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
  .text.LL_GPIO_SetPinSpeed
-                0x08001fc4       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+                0x08001fc0       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
  .text.LL_GPIO_SetPinPull
-                0x08002000       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+                0x08001ffc       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
  .text.LL_GPIO_SetAFPin_0_7
-                0x0800203c       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+                0x08002038       0x3c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
  .text.LL_GPIO_SetAFPin_8_15
-                0x08002078       0x3e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+                0x08002074       0x3e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
  .text.LL_GPIO_Init
-                0x080020b6       0x88 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
-                0x080020b6                LL_GPIO_Init
+                0x080020b2       0x88 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+                0x080020b2                LL_GPIO_Init
  .text.LL_I2C_Init
-                0x0800213e       0x6c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c.obj
-                0x0800213e                LL_I2C_Init
+                0x0800213a       0x6c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c.obj
+                0x0800213a                LL_I2C_Init
  .text.LL_mDelay
-                0x080021aa       0x2a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c.obj
-                0x080021aa                LL_mDelay
+                0x080021a6       0x2a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c.obj
+                0x080021a6                LL_mDelay
  *(.glue_7)
- .glue_7        0x080021d4        0x0 linker stubs
+ .glue_7        0x080021d0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080021d4        0x0 linker stubs
+ .glue_7t       0x080021d0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080021d4        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x080021d0        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x080021d4        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x080021d4                _init
- .init          0x080021d8        0x8 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x080021d0        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080021d0                _init
+ .init          0x080021d4        0x8 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x080021e0        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x080021e0                _fini
- .fini          0x080021e4        0x8 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x080021ec                        . = ALIGN (0x4)
-                0x080021ec                        _etext = .
+ .fini          0x080021dc        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080021dc                _fini
+ .fini          0x080021e0        0x8 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x080021e8                        . = ALIGN (0x4)
+                0x080021e8                        _etext = .
 
-.vfp11_veneer   0x080021ec        0x0
- .vfp11_veneer  0x080021ec        0x0 linker stubs
+.vfp11_veneer   0x080021e8        0x0
+ .vfp11_veneer  0x080021e8        0x0 linker stubs
 
-.v4_bx          0x080021ec        0x0
- .v4_bx         0x080021ec        0x0 linker stubs
+.v4_bx          0x080021e8        0x0
+ .v4_bx         0x080021e8        0x0 linker stubs
 
-.iplt           0x080021ec        0x0
- .iplt          0x080021ec        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x080021e8        0x0
+ .iplt          0x080021e8        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x080021ec       0x40
-                0x080021ec                        . = ALIGN (0x4)
+.rodata         0x080021e8       0x40
+                0x080021e8                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.MSIRangeTable
-                0x080021ec       0x30 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
-                0x080021ec                MSIRangeTable
+                0x080021e8       0x30 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
+                0x080021e8                MSIRangeTable
  .rodata.AHBPrescTable
-                0x0800221c       0x10 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
-                0x0800221c                AHBPrescTable
-                0x0800222c                        . = ALIGN (0x4)
+                0x08002218       0x10 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
+                0x08002218                AHBPrescTable
+                0x08002228                        . = ALIGN (0x4)
 
-.ARM.extab      0x0800222c        0x0
-                0x0800222c                        . = ALIGN (0x4)
+.ARM.extab      0x08002228        0x0
+                0x08002228                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800222c                        . = ALIGN (0x4)
+                0x08002228                        . = ALIGN (0x4)
 
-.ARM            0x0800222c        0x8
-                0x0800222c                        . = ALIGN (0x4)
-                0x0800222c                        __exidx_start = .
+.ARM            0x08002228        0x8
+                0x08002228                        . = ALIGN (0x4)
+                0x08002228                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800222c        0x8 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
-                0x08002234                        __exidx_end = .
-                0x08002234                        . = ALIGN (0x4)
+ .ARM.exidx     0x08002228        0x8 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
+                0x08002230                        __exidx_end = .
+                0x08002230                        . = ALIGN (0x4)
 
-.preinit_array  0x08002234        0x0
-                0x08002234                        . = ALIGN (0x4)
-                0x08002234                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08002230        0x0
+                0x08002230                        . = ALIGN (0x4)
+                0x08002230                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08002234                        PROVIDE (__preinit_array_end = .)
-                0x08002234                        . = ALIGN (0x4)
+                0x08002230                        PROVIDE (__preinit_array_end = .)
+                0x08002230                        . = ALIGN (0x4)
 
-.init_array     0x08002234        0x4
-                0x08002234                        . = ALIGN (0x4)
-                0x08002234                        PROVIDE (__init_array_start = .)
+.init_array     0x08002230        0x4
+                0x08002230                        . = ALIGN (0x4)
+                0x08002230                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08002234        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08002238                        PROVIDE (__init_array_end = .)
-                0x08002238                        . = ALIGN (0x4)
+ .init_array    0x08002230        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08002234                        PROVIDE (__init_array_end = .)
+                0x08002234                        . = ALIGN (0x4)
 
-.fini_array     0x08002238        0x4
-                0x08002238                        . = ALIGN (0x4)
+.fini_array     0x08002234        0x4
+                0x08002234                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08002238        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08002234        0x4 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0800223c                        . = ALIGN (0x4)
-                0x0800223c                        _sidata = LOADADDR (.data)
+                0x08002238                        . = ALIGN (0x4)
+                0x08002238                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x0800223c        0x0
- .rel.iplt      0x0800223c        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08002238        0x0
+ .rel.iplt      0x08002238        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x4c load address 0x0800223c
+.data           0x20000000       0x4c load address 0x08002238
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -3036,17 +3036,17 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
                 0x2000004c                        _edata = .
 
 .tm_clone_table
-                0x2000004c        0x0 load address 0x08002288
+                0x2000004c        0x0 load address 0x08002284
  .tm_clone_table
                 0x2000004c        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  .tm_clone_table
                 0x2000004c        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtend.o
 
-.igot.plt       0x2000004c        0x0 load address 0x08002288
+.igot.plt       0x2000004c        0x0 load address 0x08002284
  .igot.plt      0x2000004c        0x0 /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x2000004c                        . = ALIGN (0x4)
 
-.bss            0x2000004c       0x64 load address 0x08002288
+.bss            0x2000004c       0x64 load address 0x08002284
                 0x2000004c                        _sbss = .
                 0x2000004c                        __bss_start__ = _sbss
  *(.bss)
@@ -3081,7 +3081,7 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
                 0x200000b0                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200000b0      0x600 load address 0x08002288
+                0x200000b0      0x600 load address 0x08002284
                 0x200000b0                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x200000b0                        PROVIDE (_end = .)

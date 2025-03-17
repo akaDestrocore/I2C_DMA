@@ -95,7 +95,7 @@ void I2C1_Master_Receive_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 {
     // Set addr, size and buffer for DMA reception
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)pData);
-    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)&I2C1->RXDR);
+    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)&I2C1->RXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_7, size);
 
     // Enable DMA reqs for I2C1
@@ -487,7 +487,7 @@ static void MX_I2C1_Init(void)
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
   GPIO_InitStruct.Alternate = LL_GPIO_AF_4;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
@@ -596,7 +596,7 @@ static void MX_I2C2_Init(void)
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
   GPIO_InitStruct.Alternate = LL_GPIO_AF_4;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 

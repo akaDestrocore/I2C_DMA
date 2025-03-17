@@ -56,8 +56,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Startup/startup_stm32l4a6zgtx.s.
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Startup
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Src/main.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -66,8 +64,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj: C_COMPILER__STM3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_hal_msp.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Src/stm32l4xx_hal_msp.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -76,8 +72,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_hal_msp.c.obj: C_C
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Src/stm32l4xx_it.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -86,8 +80,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj: C_COMPIL
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/syscalls.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Src/syscalls.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -96,8 +88,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/syscalls.c.obj: C_COMPILER__
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/sysmem.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Src/sysmem.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -106,8 +96,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/sysmem.c.obj: C_COMPILER__ST
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Src/system_stm32l4xx.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -116,8 +104,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj: C_CO
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -126,8 +112,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -136,8 +120,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -146,8 +128,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -156,8 +136,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -166,8 +144,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -176,8 +152,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -186,8 +160,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -196,8 +168,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -206,8 +176,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -216,8 +184,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -226,8 +192,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -236,8 +200,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -246,8 +208,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -256,8 +216,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -266,8 +224,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -276,8 +232,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -286,8 +240,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -296,8 +248,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -306,8 +256,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c.obj: C_COMPILER__STM32L4_I2C_DMA_debug_unscanned_Debug /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c || cmake_object_order_depends_target_STM32L4_I2C_DMA_debug
   DEFINES = -DDEBUG -DSTM32L4A6xx -DUSE_FULL_LL_DRIVER
@@ -316,8 +264,6 @@ build CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm3
   INCLUDES = -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Core/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/Drivers/CMSIS/Include -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT -I/home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/PROJECT/misc
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
 
 
 # =============================================================================
@@ -334,9 +280,8 @@ build STM32L4_I2C_DMA_debug.elf: C_EXECUTABLE_LINKER__STM32L4_I2C_DMA_debug_Debu
   OBJECT_DIR = CMakeFiles/STM32L4_I2C_DMA_debug.dir
   POST_BUILD = cd /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build && arm-none-eabi-size /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build/STM32L4_I2C_DMA_debug.elf && arm-none-eabi-objcopy -O ihex /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build/STM32L4_I2C_DMA_debug.elf STM32L4_I2C_DMA_debug.hex && arm-none-eabi-objcopy -O binary /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/build/STM32L4_I2C_DMA_debug.elf STM32L4_I2C_DMA_debug.bin
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/STM32L4_I2C_DMA_debug.dir/
   TARGET_FILE = STM32L4_I2C_DMA_debug.elf
-  TARGET_PDB = STM32L4_I2C_DMA_debug.pdb
+  TARGET_PDB = STM32L4_I2C_DMA_debug.elf.dbg
 
 
 #############################################
@@ -384,14 +329,14 @@ build all: phony STM32L4_I2C_DMA_debug.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/CMakeLists.txt /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/cmake/gcc-arm-none-eabi.cmake /usr/share/cmake/Modules/CMakeASMCompiler.cmake.in /usr/share/cmake/Modules/CMakeASMInformation.cmake /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestASMCompiler.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeASMCompiler.cmake CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/CMakeLists.txt /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/cmake/gcc-arm-none-eabi.cmake /usr/share/cmake/Modules/CMakeASMInformation.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeASMCompiler.cmake CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/CMakeLists.txt /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/cmake/gcc-arm-none-eabi.cmake /usr/share/cmake/Modules/CMakeASMCompiler.cmake.in /usr/share/cmake/Modules/CMakeASMInformation.cmake /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestASMCompiler.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeASMCompiler.cmake CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake: phony
+build /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/CMakeLists.txt /home/lapsw1-2024/destrocore/VSCode/Projects/I2C_DMA/cmake/gcc-arm-none-eabi.cmake /usr/share/cmake/Modules/CMakeASMInformation.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeASMCompiler.cmake CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake: phony
 
 
 #############################################
