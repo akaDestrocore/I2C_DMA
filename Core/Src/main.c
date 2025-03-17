@@ -70,10 +70,23 @@ static void MX_I2C2_Init(void);
 /* USER CODE BEGIN 0 */
 void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 {
+    // Clear any pending status flags from previous transfers
+    LL_I2C_ClearFlag_STOP(I2C1);
+    LL_I2C_ClearFlag_NACK(I2C1);
+    
+    // Disable the DMA channel first (safety measure)
+    LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_6);
+    
     // Set addr, size and buffer for DMA transfers
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)pData);
     LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)&I2C1->TXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_6, size);
+
+    // Clear any pending DMA flags
+    LL_DMA_ClearFlag_TC6(DMA1);
+    LL_DMA_ClearFlag_HT6(DMA1);
+    LL_DMA_ClearFlag_GI6(DMA1);
+    LL_DMA_ClearFlag_TE6(DMA1);
 
     // Enable DMA req for I2C1
     LL_I2C_EnableDMAReq_TX(I2C1);
@@ -93,10 +106,23 @@ void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 
 void I2C1_Master_Receive_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 {
+    // Clear any pending status flags from previous transfers
+    LL_I2C_ClearFlag_STOP(I2C1);
+    LL_I2C_ClearFlag_NACK(I2C1);
+    
+    // Disable the DMA channel first (safety measure)
+    LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_7);
+    
     // Set addr, size and buffer for DMA reception
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)pData);
     LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)&I2C1->RXDR);
     LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_7, size);
+
+    // Clear any pending DMA flags
+    LL_DMA_ClearFlag_TC7(DMA1);
+    LL_DMA_ClearFlag_HT7(DMA1);
+    LL_DMA_ClearFlag_GI7(DMA1);
+    LL_DMA_ClearFlag_TE7(DMA1);
 
     // Enable DMA reqs for I2C1
     LL_I2C_EnableDMAReq_RX(I2C1);
@@ -260,28 +286,27 @@ void I2C1_EV_IRQHandler(void)
  void I2C2_EV_IRQHandler(void)
  {
    if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
-
      LL_I2C_ClearFlag_ADDR(I2C2);
-
+ 
      if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
-
        LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
      } else {
-
        LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);
      }
    }
-
+ 
    if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
-      LL_I2C_ClearFlag_STOP(I2C2);
-    
-      // Always prepare for next reception regardless of current flag
-      I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
-    
-      // Always prepare for next transmission regardless of current flag
-      I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
-    }
-
+     LL_I2C_ClearFlag_STOP(I2C2);
+     
+     // Also clear any other pending flags
+     LL_I2C_ClearFlag_NACK(I2C2);
+     
+     // Always prepare for next reception regardless of current flag
+     I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
+     
+     // Always prepare for next transmission regardless of current flag
+     I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
+   }
  }
 
 /**

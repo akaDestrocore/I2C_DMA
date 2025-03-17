@@ -3161,20 +3161,20 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a
  .debug_frame   0x00000f60       0x4c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c.obj
  .debug_frame   0x00000fac       0xf4 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c.obj
 
-.debug_line     0x00000000     0x980c
+.debug_line     0x00000000     0x980a
  .debug_line    0x00000000       0x7a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Startup/startup_stm32l4a6zgtx.s.obj
- .debug_line    0x0000007a     0x1929 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
- .debug_line    0x000019a3      0x631 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_line    0x00001fd4      0x6ec CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_line    0x000026c0      0x3b9 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
- .debug_line    0x00002a79      0x9ec CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_line    0x00003465      0xb7c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_line    0x00003fe1      0xdee CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_line    0x00004dcf     0x136e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_line    0x0000613d     0x1c44 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_line    0x00007d81      0xa4a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
- .debug_line    0x000087cb      0x5b0 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c.obj
- .debug_line    0x00008d7b      0xa91 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c.obj
+ .debug_line    0x0000007a     0x1927 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/main.c.obj
+ .debug_line    0x000019a1      0x631 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_line    0x00001fd2      0x6ec CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_line    0x000026be      0x3b9 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_line    0x00002a77      0x9ec CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_line    0x00003463      0xb7c CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_line    0x00003fdf      0xdee CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_line    0x00004dcd     0x136e CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_line    0x0000613b     0x1c44 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_line    0x00007d7f      0xa4a CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c.obj
+ .debug_line    0x000087c9      0x5b0 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c.obj
+ .debug_line    0x00008d79      0xa91 CMakeFiles/STM32L4_I2C_DMA_debug.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c.obj
 
 .debug_line_str
                 0x00000000      0x179
