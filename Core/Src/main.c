@@ -273,18 +273,15 @@ void I2C1_EV_IRQHandler(void)
    }
 
    if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
+      LL_I2C_ClearFlag_STOP(I2C2);
+    
+      // Always prepare for next reception regardless of current flag
+      I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
+    
+      // Always prepare for next transmission regardless of current flag
+      I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
+    }
 
-     LL_I2C_ClearFlag_STOP(I2C2);
-
-     if (1 == slave_rx_complete) {
-
-       I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
-     }
-     if (1 == slave_tx_complete) {
-
-       I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
-     }
-   }
  }
 
 /**
@@ -388,12 +385,19 @@ int main(void)
 
       LL_mDelay(1000);
 
+      // Transmit data to slave
       I2C1_Master_Transmit_DMA(SLAVE_ADDRESS, master_tx_buffer, strlen((char*)master_tx_buffer));
+      
+      // Wait for transmit to complete
+      while (1 != master_tx_complete) {
+        // Small delay to prevent tight loop
+        LL_mDelay(1);
+      }
 
       LL_GPIO_TogglePin(RED_GPIO_Port, RED_Pin);
-
       LL_mDelay(100);
 
+      // Now receive data from slave
       I2C1_Master_Receive_DMA(SLAVE_ADDRESS, master_rx_buffer, strlen((char*)slave_tx_buffer));
     }
     /* USER CODE END WHILE */
