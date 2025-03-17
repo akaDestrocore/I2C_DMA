@@ -73,10 +73,10 @@ void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
     // Clear any pending status flags from previous transfers
     LL_I2C_ClearFlag_STOP(I2C1);
     LL_I2C_ClearFlag_NACK(I2C1);
-    
-    // Disable the DMA channel first (safety measure)
+
+    // Disable the DMA channel
     LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_6);
-    
+
     // Set addr, size and buffer for DMA transfers
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)pData);
     LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_6, (uint32_t)&I2C1->TXDR);
@@ -106,13 +106,13 @@ void I2C1_Master_Transmit_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 
 void I2C1_Master_Receive_DMA(uint8_t slaveAddr, uint8_t *pData, uint16_t size)
 {
-    // Clear any pending status flags from previous transfers
+    // Clear any pending status flags from previous transfer
     LL_I2C_ClearFlag_STOP(I2C1);
     LL_I2C_ClearFlag_NACK(I2C1);
-    
-    // Disable the DMA channel first (safety measure)
+
+    // Disable the DMA channel
     LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_7);
-    
+
     // Set addr, size and buffer for DMA reception
     LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)pData);
     LL_DMA_SetPeriphAddress(DMA1, LL_DMA_CHANNEL_7, (uint32_t)&I2C1->RXDR);
@@ -283,31 +283,52 @@ void I2C1_EV_IRQHandler(void)
 /**
   * @brief This function handles I2C2 event interrupt.
   */
- void I2C2_EV_IRQHandler(void)
- {
-   if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
-     LL_I2C_ClearFlag_ADDR(I2C2);
- 
-     if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
-       LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);
-     } else {
-       LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);
-     }
-   }
- 
-   if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
-     LL_I2C_ClearFlag_STOP(I2C2);
-     
-     // Also clear any other pending flags
-     LL_I2C_ClearFlag_NACK(I2C2);
-     
-     // Always prepare for next reception regardless of current flag
-     I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
-     
-     // Always prepare for next transmission regardless of current flag
-     I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
-   }
- }
+void I2C2_EV_IRQHandler(void)
+{
+  // Handle address matched event
+  if (LL_I2C_IsActiveFlag_ADDR(I2C2)) {
+    // Clear address matched flag
+    LL_I2C_ClearFlag_ADDR(I2C2);
+
+    // Also clear any pending NACK flag
+    if (LL_I2C_IsActiveFlag_NACK(I2C2)) {
+      LL_I2C_ClearFlag_NACK(I2C2);
+    }
+
+    // Enable appropriate DMA channel based on direction
+    if (LL_I2C_GetTransferDirection(I2C2) == LL_I2C_DIRECTION_WRITE) {
+      LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_5);  // RX
+    } else {
+      LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_4);  // TX
+    }
+  }
+
+  // Handle STOP detection
+  if (LL_I2C_IsActiveFlag_STOP(I2C2)) {
+    // Clear STOP flag
+    LL_I2C_ClearFlag_STOP(I2C2);
+
+    // Clear any other pending flags
+    if (LL_I2C_IsActiveFlag_NACK(I2C2)) {
+      LL_I2C_ClearFlag_NACK(I2C2);
+    }
+
+    // Clear any other error flags that might be set
+    LL_I2C_ClearFlag_BERR(I2C2);
+    LL_I2C_ClearFlag_ARLO(I2C2);
+    LL_I2C_ClearFlag_OVR(I2C2);
+
+    // Reset the DMA channels and re-initialize for next operations
+    LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_4);
+    LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_5);
+
+    // Always prepare for next reception
+    I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
+
+    // Always prepare for next transmission
+    I2C2_Slave_Transmit_DMA_Setup(slave_tx_buffer, sizeof(slave_tx_buffer));
+  }
+}
 
 /**
   * @brief This function handles I2C1 error interrupt.
@@ -371,7 +392,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   I2C2_Slave_Init();
 
-  // Prepare slave
+  // Setup slave
   I2C2_Slave_Receive_DMA_Setup(slave_rx_buffer, sizeof(slave_rx_buffer));
 
   // Prepare slave to send data
@@ -396,6 +417,7 @@ int main(void)
     // wait TC
   }
 
+  // OK
   LL_GPIO_TogglePin(RED_GPIO_Port, RED_Pin);
   /* USER CODE END 2 */
 
@@ -412,10 +434,9 @@ int main(void)
 
       // Transmit data to slave
       I2C1_Master_Transmit_DMA(SLAVE_ADDRESS, master_tx_buffer, strlen((char*)master_tx_buffer));
-      
+
       // Wait for transmit to complete
       while (1 != master_tx_complete) {
-        // Small delay to prevent tight loop
         LL_mDelay(1);
       }
 
